@@ -41,12 +41,10 @@ def main():
 	pipe_file_path = str(sys.argv[2])
 
 	songs = get_songs(song_list_path)
-	print(songs)
 
 	while True:
 		wait_update(pipe_file_path)
 		time.sleep(1)
-		print("Update")
 		suggestion = get_suggestion(songs)
 		print(suggestion)
 		write_file(pipe_file_path, suggestion)
