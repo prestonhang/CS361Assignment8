@@ -46,6 +46,5 @@ def main():
 		wait_update(pipe_file_path)
 		time.sleep(1)
 		suggestion = get_suggestion(songs)
-		print(suggestion)
 		write_file(pipe_file_path, suggestion)
 main()
